@@ -1,0 +1,51 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{include/homework}
+
+%
+% Setting UTF8 enconding
+%
+\RequirePackage[utf8]{inputenc}
+
+%
+% Paper size with 1" margin, following MLA guidelines
+%
+\RequirePackage[margin=1.0in]{geometry}
+
+%
+% Languange definitions
+%
+\RequirePackage{t1enc}
+\RequirePackage[main=hungarian,greek,english,italian]{babel}
+\frenchspacing
+
+%
+% Used for the multiple column environment
+%
+\RequirePackage{multicol}
+\RequirePackage{ragged2e}
+
+%
+% Blindtext for dummy text
+%
+\RequirePackage{blindtext}
+
+%
+% Special title parameters
+%
+\RequirePackage{titling}
+% Setting the customized title
+\setlength{\droptitle}{-0.8in}
+\pretitle{\begin{center}\large\bfseries}
+\posttitle{\par\end{center}}
+\preauthor{\begin{center}}
+\postauthor{\end{center}\vspace{-0.08in}}
+\predate{\par\centering}
+\postdate{\par\vskip 2ex}
+
+%++
+%++ Document style settings
+%++
+
+% Set the baseline a little bigger
+
+\endinput
